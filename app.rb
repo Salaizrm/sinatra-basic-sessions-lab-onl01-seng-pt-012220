@@ -18,6 +18,8 @@ class App < Sinatra::Base
     #{@item}
     LIST
 
+    "#{list}"
+
 
     erb :checkout
   end
