@@ -13,6 +13,11 @@ class App < Sinatra::Base
 
   post '/' do
     @item = params[:item]
+    @list = list
+    list = <<-LIST
+    Here is your shopping cart:
+    #{@item} 
+    LIST
 
 
     erb :checkout
