@@ -13,7 +13,6 @@ class App < Sinatra::Base
 
   post '/checkout' do
     @item = params[:item]
-    @list = list
     list = <<-LIST
     Here is your shopping cart:
     #{@item}
