@@ -16,7 +16,7 @@ class App < Sinatra::Base
     @list = list
     list = <<-LIST
     Here is your shopping cart:
-    #{@item} 
+    #{@item}
     LIST
 
 
