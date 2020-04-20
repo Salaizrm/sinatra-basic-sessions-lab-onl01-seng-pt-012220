@@ -12,7 +12,7 @@ class App < Sinatra::Base
   end
 
   post '/' do
-
+    @item = params[:item]
 
     erb :checkout
   end
