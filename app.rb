@@ -13,5 +13,6 @@ class App < Sinatra::Base
 
   post '/' do
     erb :checkout
+  end
 
 end
